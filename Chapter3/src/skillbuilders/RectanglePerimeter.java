@@ -12,7 +12,7 @@ public class RectanglePerimeter {
 		int width = scanner.nextInt();
 		System.out.println("What is the width of the rectangle");
 		
-		int answer = length + width;
+		int answer = 2 * (length + width);
 		System.out.println(answer);
 	}
 
