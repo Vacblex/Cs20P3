@@ -1,14 +1,19 @@
 package skillbuilders;
+import java.util.Scanner;
 
 public class RectanglePerimeter {
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 		
-		int length = 13;
-		int width = 4;
+		int length = scanner.nextInt();
+		System.out.println("What is the length of the rectangle");
+		
+		int width = scanner.nextInt();
+		System.out.println("What is the width of the rectangle");
+		
 		int answer = 2 * (length + width);
-		
-		System.out.println(answer);
+		System.out.println("Perimeter = " + answer);
 	}
 
 }
