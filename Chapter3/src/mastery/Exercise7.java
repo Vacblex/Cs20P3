@@ -11,3 +11,4 @@ public class Exercise7 {
 		System.out.println("   |_________|");
 	}
 }
+

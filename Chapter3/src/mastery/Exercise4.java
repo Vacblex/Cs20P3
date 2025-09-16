@@ -25,3 +25,4 @@ public class Exercise4 {
 		System.out.println(" - Paper covers rock (Paper wins)");
 	}
 }
+
