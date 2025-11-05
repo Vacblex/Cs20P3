@@ -9,10 +9,10 @@ House maker, 3 different methods.
 public class Exercise1 {
 	public static void main(String[] args) {
         addRoof();
-        addBase();
+        addBase(); //Calls the 3 methods to make the house
         addWalk();
     }
-    
+    //Method adds roof
     private static void addRoof() {
         System.out.println("               ( )");
         System.out.println("      ()      (   )      ()");
@@ -23,7 +23,7 @@ public class Exercise1 {
         System.out.println(" (_______(             )_______)");
         System.out.println(" |      (_______________)      |");
     }
-    
+  //Method adds base
     private static void addBase() {
         System.out.println(" |      |     _____     |      |");
         System.out.println(" |      |    |__|__|    |      |");
@@ -34,7 +34,7 @@ public class Exercise1 {
         System.out.println(" |______|  |   .|.   |  |______|");
         System.out.println("        |__|____|____|__|");
     }
-    
+  //Method adds walk
     private static void addWalk() {
         System.out.println("               | |");
         System.out.println("               | |___________________________");
