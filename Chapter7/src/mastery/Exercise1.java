@@ -18,6 +18,7 @@ public class Exercise1 {
         do {
             choices();
         } while (!x.equals("0"));
+        System.out.println("Program has quit");
     }
     
     private static void choices() {
@@ -69,7 +70,6 @@ public class Exercise1 {
         } else { //sets it to the quitting option
             x = "0"; //just to make sure it quits 100%
         }
-        scanner.close();
     }
     
     private static void addMoney() {
@@ -92,3 +92,134 @@ public class Exercise1 {
         total = 0.00; //sets it to $0
     }
 }
+/*
+1) Show total
+2) Add Penny
+3) Add Nickel
+4) Add Dime
+5) Add Quarter
+6) Remove all money
+0) Quit
+Enter a choice: 5
+
+-------------------------------
+
+Amount added
+
+-------------------------------
+
+1) Show total
+2) Add Penny
+3) Add Nickel
+4) Add Dime
+5) Add Quarter
+6) Remove all money
+0) Quit
+Enter a choice: 
+
+
+
+ERROR, choice input is not valid
+
+
+
+1) Show total
+2) Add Penny
+3) Add Nickel
+4) Add Dime
+5) Add Quarter
+6) Remove all money
+0) Quit
+Enter a choice: 4
+
+-------------------------------
+
+Amount added
+
+-------------------------------
+
+1) Show total
+2) Add Penny
+3) Add Nickel
+4) Add Dime
+5) Add Quarter
+6) Remove all money
+0) Quit
+Enter a choice: 2
+
+-------------------------------
+
+Amount added
+
+-------------------------------
+
+1) Show total
+2) Add Penny
+3) Add Nickel
+4) Add Dime
+5) Add Quarter
+6) Remove all money
+0) Quit
+Enter a choice: 1
+
+-------------------------------
+
+Total is $0.36
+
+-------------------------------
+
+1) Show total
+2) Add Penny
+3) Add Nickel
+4) Add Dime
+5) Add Quarter
+6) Remove all money
+0) Quit
+Enter a choice: 6
+
+-------------------------------
+
+All removed
+
+-------------------------------
+
+1) Show total
+2) Add Penny
+3) Add Nickel
+4) Add Dime
+5) Add Quarter
+6) Remove all money
+0) Quit
+Enter a choice: 2
+
+-------------------------------
+
+Amount added
+
+-------------------------------
+
+1) Show total
+2) Add Penny
+3) Add Nickel
+4) Add Dime
+5) Add Quarter
+6) Remove all money
+0) Quit
+Enter a choice: 1
+
+-------------------------------
+
+Total is $0.01
+
+-------------------------------
+
+1) Show total
+2) Add Penny
+3) Add Nickel
+4) Add Dime
+5) Add Quarter
+6) Remove all money
+0) Quit
+Enter a choice: 0
+Program has quit
+*/
