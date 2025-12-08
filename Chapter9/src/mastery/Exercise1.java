@@ -1,5 +1,12 @@
 package mastery;
 
+/*
+Thomas Ly
+CHHS
+November 18th
+Purpose: gets 25 random numbers and sorts them odd or even
+*/
+
 public class Exercise1 {
 	public static void main(String[] args) {
         int[] numlist = new int[25];
@@ -50,3 +57,11 @@ public class Exercise1 {
         System.out.println();
     }
 }
+
+/*
+Even--------------
+90 70 84 28 28 76 28 58 52 12 92 40 
+
+Odd---------------
+89 43 75 65 19 17 9 97 11 51 51 75 31 
+*/

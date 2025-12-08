@@ -1,5 +1,12 @@
 package mastery;
 
+/*
+Thomas Ly
+CHHS
+November 18th
+Purpose: tests if text is a palindrome
+*/
+
 import java.util.Scanner;
 
 public class Exercise8 {
@@ -51,3 +58,13 @@ public class Exercise8 {
         }
     }
 }
+
+/* screendump 1
+Palindrome tester, enter your text: racecar
+Is a palindrome
+*/
+
+/* screendump 2
+Palindrome tester, enter your text: gibberish
+Isn't a palindrome
+*/
