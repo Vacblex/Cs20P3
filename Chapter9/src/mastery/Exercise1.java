@@ -3,13 +3,13 @@ package mastery;
 /*
 Thomas Ly
 CHHS
-November 18th
+December 2nd
 Purpose: gets 25 random numbers and sorts them odd or even
 */
 
 public class Exercise1 {
 	public static void main(String[] args) {
-        int[] numlist = new int[25];
+        int[] numlist = new int[25]; //25 numbers calls for a size of 25
         
         for (int i = 0; i < numlist.length; i++) {
             numlist[i] = (int)(Math.random() * 99);
@@ -25,10 +25,10 @@ public class Exercise1 {
                 y++;
             }
         }
-        int[] even = new int[x];
+        int[] even = new int[x]; //an array for odd or even
         int[] odd = new int[y];
         
-        int e = 0;
+        int e = 0; //placeholder variables
         int o = 0;
 
         for (int i = 0; i < numlist.length; i++) {
@@ -41,7 +41,7 @@ public class Exercise1 {
             }
         }
 
-        System.out.println("Even--------------");
+        System.out.println("Even--------------"); //these next lines till the end will print each number one by one so there is no tomfoolery in the printing
         for (int i = 0; i < even.length; i++) {
             System.out.print(even[i] + " ");
         }

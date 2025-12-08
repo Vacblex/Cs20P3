@@ -3,7 +3,7 @@ package mastery;
 /*
 Thomas Ly
 CHHS
-November 18th
+December 5th
 Purpose: tests if text is a palindrome
 */
 
@@ -17,14 +17,14 @@ public class Exercise8 {
         System.out.print("Palindrome tester, enter your text: ");
         String paltest = s.nextLine();
         
-        char[] array = new char[paltest.length()];
+        char[] array = new char[paltest.length()]; //makes new arrays in the length of the text
         char[] array2 = new char[paltest.length()];
         
-        paltest = paltest.toLowerCase();
+        paltest = paltest.toLowerCase(); //puts them into lowercase
         
         int x = 0;
-
-        for (int i = paltest.length() - 1; i >= 0; i--) {
+        
+        for (int i = paltest.length() - 1; i >= 0; i--) { //this for loop puts the text into the array character by character backwards
             char l = paltest.charAt(i);
             if (l != ' ') {
                 array[x] = paltest.charAt(i);
@@ -34,7 +34,7 @@ public class Exercise8 {
         
         x = 0;
         
-        for (int i = 0; i < paltest.length(); i++) {
+        for (int i = 0; i < paltest.length(); i++) { //puts text into array forwards this time
             char k = paltest.charAt(i);
             if (k != ' ') {
                 array2[x] = paltest.charAt(i);
@@ -43,18 +43,18 @@ public class Exercise8 {
         }
         
         
-        for (int i = 0; i < paltest.length(); i++) {
+        for (int i = 0; i < paltest.length(); i++) { //checks if they match
             if (array[i] != (array2[i])) {
-                not++;
+                not++; //adds 1 if there is a mismatch
             }
             i++;
         }
         
         
         if (not == 0) {
-            System.out.println("Is a palindrome");
+            System.out.println("Is a palindrome"); //if matches (not variable untouched)
         } else {
-            System.out.println("Isn't a palindrome");
+            System.out.println("Isn't a palindrome"); //if the not variable is changed
         }
     }
 }
