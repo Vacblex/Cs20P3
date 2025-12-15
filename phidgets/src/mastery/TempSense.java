@@ -4,12 +4,16 @@ import com.phidget22.*;
 public class TempSense {
 	public static void main(String[] args) throws Exception{
 
-        TemperatureSensor temperatureSensor = new TemperatureSensor();
+        TemperatureSensor temp = new TemperatureSensor();
 
-        temperatureSensor.open(1000);
+        temp.open(1000);
 
         while (true) {
-            System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
+        	double Fahrenheit = (temp.getTemperature() * 1.8) + 32;
+            System.out.println("Temperature Celsius: " + temp.getTemperature());
+            System.out.printf("Temperature Fahrenheit: %.2f%n", Fahrenheit);
+            System.out.println();
+            Thread.sleep(100);
         }
     }
 }
