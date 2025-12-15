@@ -25,12 +25,12 @@ public class BlinkLED {
 	    Thread.sleep(2000);
 	    redLED.setState(false);
 	    Thread.sleep(500);
-		}
+	}
 	while (true) {
 		greenLED.setState(true);
 		Thread.sleep(500);
 		greenLED.setState(false);
 		Thread.sleep(500);
-		}
+	}
 	}
 }
