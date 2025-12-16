@@ -26,21 +26,20 @@ public class Thermostat {
         temp.open(1000);
         
         double settemp = 21;
-        double settemppast = 21;
         boolean press = true;
         
-        long start = System.currentTimeMillis();
+        long start = System.currentTimeMillis();//time when started >long is for long numbers
         
         while(true){
-        	long timer = System.currentTimeMillis(); //time when started, current time, time elapsed
-        	long elapsed = timer - start;
+        	long timer = System.currentTimeMillis(); //current time
+        	long elapsed = timer - start;//time elapsed
         	
         	if(greenButton.getState() == true && press == true){
                 settemp++;
                 while (greenButton.getState() == true) {
                 	press = false;
                 }
-                if (greenButton.getState() == false) {
+                if (greenButton.getState() == false) { //runs when button is not being held anymore (able to press again)
             		press = true;
             	}
             } else if(redButton.getState() == true && press == true) {
@@ -48,7 +47,7 @@ public class Thermostat {
                 while (redButton.getState() == true) {
                 	press = false;
                 }
-                if (redButton.getState() == false) {
+                if (redButton.getState() == false) { //runs when button is not being held anymore (able to press again)
             		press = true;
             	}
             }
@@ -61,11 +60,11 @@ public class Thermostat {
         		greenLED.setState(false);
         	}
         	
-        	if (elapsed >= 10000) {
+        	if (elapsed >= 10000) { //runs every 10 seconds
         		System.out.println("Temperature: " + temp.getTemperature());
         		System.out.println("Set temperature " + settemp);
         		System.out.println();
-        		start = System.currentTimeMillis();
+        		start = System.currentTimeMillis(); //resets the timer
         	}
         }
     }
